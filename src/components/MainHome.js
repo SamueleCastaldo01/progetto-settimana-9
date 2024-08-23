@@ -1,3 +1,5 @@
+import Gallerie  from "./Gallerie";
+
 function MainHome() {
 
     return(
@@ -30,75 +32,11 @@ function MainHome() {
             <i className="bi bi-grid-3x3 icons"></i>
           </div>
         </div>
-        <h4>Trending Now</h4>
-        <div
-          className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4"
-        >
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/1.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/2.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/3.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/4.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/5.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/6.png" alt="movie picture" />
-          </div>
-        </div>
-        <h4>Watch it Again</h4>
-        <div
-          className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4"
-        >
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/7.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/8.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/9.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/10.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/11.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/12.png" alt="movie picture" />
-          </div>
-        </div>
-        <h4>New Releases</h4>
-        <div
-          className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4"
-        >
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/13.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/14.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/15.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/16.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/17.png" alt="movie picture" />
-          </div>
-          <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/18.png" alt="movie picture" />
-          </div>
-        </div>
+
+        <Gallerie title="Trending Now"/>
+        <Gallerie title="Watch it Again"/>
+        <Gallerie title="New Releases"/>
+
         </div>
         </>
     )
