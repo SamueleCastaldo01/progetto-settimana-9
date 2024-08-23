@@ -100,3 +100,10 @@ footer {
 .col img:hover {
   transform: scale(1.1);
 }
+
+.poster-img {
+  width: 240px; /* Larghezza fissa per mantenere il formato orizzontale */
+  height: 150px; /* Altezza fissa per mantenere il formato orizzontale */
+  object-fit: cover; /* Adatta l'immagine per riempire l'area senza distorsioni */
+  border-radius: 8px; /* Facoltativo: per angoli arrotondati *//* Facoltativo: aggiunge uno spazio tra le immagini */
+}
