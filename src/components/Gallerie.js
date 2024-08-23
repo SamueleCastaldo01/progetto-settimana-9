@@ -47,7 +47,7 @@ class Gallerie extends Component {
         return(
             <>
         <h4 className="text-white text-start">{this.props.title}</h4>
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-1">
 
         {this.state.isLoading &&
             <CircularProgress color="inherit"/> 
