@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import Search from './pages/Search';
+import DetailsFilm from './pages/DetailsFilm';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 //extra extra ho creato la pagina search dei film
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/search" element={<Search />} />
+                <Route path="/detailsFilm" element={<DetailsFilm />} />
             </Routes>
         </Router>
     </div>

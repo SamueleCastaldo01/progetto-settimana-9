@@ -25,7 +25,7 @@ class GallFilm extends Component {
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
       >
-        <div className={`GallFilmCont position-relative ${isHovered ? 'hovered' : ''}`}>
+        <div className={`GallFilmCont ${isHovered ? 'hovered' : ''}`}>
           <img className={`poster-img ${isHovered ? 'special-hover' : ''}`} src={src} alt="movie picture" />
           {isHovered && (
             <div className="film-details p-2 text-start position-absolute w-100" style={{backgroundColor: "black"}}>
