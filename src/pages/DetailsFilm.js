@@ -7,7 +7,8 @@ class DetailsFilm extends Component {
         return(
             <>
                 <NavBar />
-                    
+                <h2>Non lo ho fatta più</h2>
+
                 <Footer />
             </>
         )
