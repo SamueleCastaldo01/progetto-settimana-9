@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function NavBar() {
     return(
         <>
@@ -7,9 +9,9 @@ function NavBar() {
         style={{backgroundColor: "#221f1f"}}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#"
-            ><img src="assets/logo.png" style={{width: "100px", height: "55px"}}
-          /></a>
+        <Link className="navbar-brand" to="/">
+            <img src="assets/logo.png" style={{ width: "100px", height: "55px" }} alt="Logo" />
+        </Link>
           <button
             className="navbar-toggler"
             type="button"

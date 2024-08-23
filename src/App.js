@@ -1,18 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import HomePage from './pages/HomePage';
 import NavBar from './components/NavBar';
-import MainHome from './components/MainHome';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-
-      <MainHome />
-
-      <Footer />
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+            </Routes>
+        </Router>
     </div>
   );
 }
