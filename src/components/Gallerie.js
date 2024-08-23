@@ -61,7 +61,7 @@ class Gallerie extends Component {
 
             {this.state.films.slice(0, 6).map((film, i) => {
                 return (
-                    <GallFilm key={i} src={film.Poster}/>
+                    <GallFilm key={i} src={film.Poster} title={film.Title} type={film.Type} year={film.Year}/>
                 );
             })}
 
