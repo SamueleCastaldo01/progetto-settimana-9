@@ -38,7 +38,7 @@ class Gallerie extends Component {
       }
 
       componentDidMount() {
-        this.fetchFilms(); // Chiama la funzione di fetch quando il componente viene montato
+        this.fetchFilms(); 
       }
 
     render() {

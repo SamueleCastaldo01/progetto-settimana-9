@@ -42,7 +42,9 @@ function NavBar() {
               </li>
             </ul>
             <div className="d-flex align-items-center">
+            <Link className="navbar-brand" to="/search">
               <i className="bi bi-search icons"></i>
+            </Link>
               <div id="kids" className="fw-bold">KIDS</div>
               <i className="bi bi-bell icons"></i>
               <i className="bi bi-person-circle icons"></i>

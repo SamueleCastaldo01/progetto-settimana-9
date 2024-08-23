@@ -2,7 +2,8 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Search from './pages/Search';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/settings" element={<Settings />} />
+                <Route path="/search" element={<Search />} />
             </Routes>
         </Router>
     </div>

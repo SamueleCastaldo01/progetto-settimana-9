@@ -6,7 +6,7 @@ class GallFilm extends Component{
 
         return(
             <>
-          <div className="col mb-2 text-center px-1">
+          <div className="col mb-4 text-center px-1" key={this.props.key}>
             <img className="poster-img" src={this.props.src} alt="movie picture" />
           </div>
             </>
