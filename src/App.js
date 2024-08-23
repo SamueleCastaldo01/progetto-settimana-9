@@ -18,7 +18,7 @@ function App() {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/search" element={<Search />} />
-                <Route path="/detailsFilm" element={<DetailsFilm />} />
+                <Route path="/detailsFilm" element={<DetailsFilm />} /> {/**Questa non è completata */}
             </Routes>
         </Router>
     </div>
