@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, createRef } from "react";
 import NavBar from "../components/NavBar";
 import { TextField } from "@mui/material";
 import GallFilm from "../components/GallFilm";
@@ -11,11 +11,13 @@ class Search extends Component {
         search: "",
     };
 
-
     // Debounce Timer
     debounceTimeout = null;
 
-//quando andiamo a scrivere si attiva questa funzione che a sua volta va ad attivare la funzione fetch con un ritardo
+    // mi serve per fare l'autofocus all'input. Si attiva quando nel componentDidMount
+    searchInputRef = createRef();
+
+    // quando andiamo a scrivere si attiva questa funzione che a sua volta va ad attivare la funzione fetch con un ritardo
     handleSearchChange = (event) => {
         const searchValue = event.target.value;
         this.setState({ search: searchValue });
@@ -23,13 +25,13 @@ class Search extends Component {
         if (this.debounceTimeout) {
             clearTimeout(this.debounceTimeout);
         }
-    //un ritardo per non avere problemi con la fetch
+        // un ritardo per non avere problemi con la fetch
         this.debounceTimeout = setTimeout(() => {
             this.fetchFilms(searchValue);
         }, 300);
     };
 
-//----------------------------------------------------------
+    //----------------------------------------------------------
     fetchFilms = (searchQuery) => {
         if (!searchQuery) {
             this.setState({
@@ -68,6 +70,10 @@ class Search extends Component {
 
     componentDidMount() {
         this.fetchFilms(this.state.search); // Fetch iniziale
+        // Fa il focus all'input
+        if (this.searchInputRef.current) {
+            this.searchInputRef.current.focus();
+        }
     }
 
     render() {
@@ -83,6 +89,8 @@ class Search extends Component {
                         variant="outlined"
                         onChange={this.handleSearchChange}
                         value={this.state.search}
+                        // Attach the ref to the TextField
+                        inputRef={this.searchInputRef}
                     />
 
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 mt-5">
