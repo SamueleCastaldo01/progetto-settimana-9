@@ -6,6 +6,7 @@ import Search from './pages/Search';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 //extra extra ho creato la pagina search dei film
+//extra extra hover riproduci con i dettagli del film
 
 function App() {
   return (
