@@ -81,7 +81,7 @@ class Search extends Component {
             <>
                 <NavBar />
 
-                <div className="d-flex justify-content-start p-5 flex-column">
+                <div className="d-flex justify-content-start p-5 flex-column mb-5">
                     <TextField
                         className="w-25"
                         id="outlined-basic"

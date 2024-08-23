@@ -127,6 +127,23 @@ footer {
   border-top-right-radius: 0px;
 }
 
+.form-select {
+  color: #fff; /* Testo delle opzioni in bianco */
+  background-color: #343a40; /* Sfondo scuro per il selettore */
+  border: 1px solid #495057; /* Bordo scuro */
+}
+
+.form-select:focus {
+  background-color: #495057; /* Sfondo scuro quando in focus */
+  border-color: #ced4da; /* Colore del bordo quando in focus */
+  box-shadow: none; /* Rimuovere l'ombra di focus */
+}
+
+.form-select option {
+  color: #212529; /* Testo delle opzioni in colore scuro */
+  background-color: #f8f9fa; /* Sfondo chiaro per le opzioni */
+}
+
 .mainProfile {
   padding-left: 20%;
   padding-right: 20%;
