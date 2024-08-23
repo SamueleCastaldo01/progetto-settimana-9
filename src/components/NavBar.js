@@ -10,7 +10,7 @@ function NavBar() {
       >
         <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-            <img src="assets/logo.png" style={{ width: "100px", height: "55px" }} alt="Logo" />
+            <img src="assets/img/netflix_logo.png" style={{ width: "100px", height: "55px" }} alt="Logo" />
         </Link>
           <button
             className="navbar-toggler"
@@ -26,7 +26,7 @@ function NavBar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active fw-bold" href="#">Home</a>
+                <a className="nav-link active fw-bold" href="/">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link fw-bold" href="#">TV Shows</a>
@@ -35,10 +35,10 @@ function NavBar() {
                 <a className="nav-link fw-bold" href="#">Movies</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-bold" href="#">Recently Added</a>
+                <a className="nav-link fw-bold" href="/profile">Profile</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-bold" href="#">My List</a>
+                <a className="nav-link fw-bold" href="/settings">Settings</a>
               </li>
             </ul>
             <div className="d-flex align-items-center">
