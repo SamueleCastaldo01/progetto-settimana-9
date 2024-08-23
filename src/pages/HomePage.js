@@ -9,7 +9,6 @@ function HomePage() {
 
         <NavBar />
         <MainHome />
-
         <Footer />
         </>
     )

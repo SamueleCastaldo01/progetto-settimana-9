@@ -5,6 +5,7 @@ import Settings from './pages/Settings';
 import Search from './pages/Search';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+//extra extra ho creato la pagina search dei film
 
 function App() {
   return (

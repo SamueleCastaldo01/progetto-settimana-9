@@ -41,6 +41,7 @@
 
 .App {
   background-color: #221f1f;
+  overflow-x: hidden;
 }
 
 h2,

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 function NavBar() {
     return(
         <>
-            <nav
-        className="navbar navbar-expand-lg"
+        <nav
+        className="navbar navbar-expand-lg position-sticky top-0 z-3"
         data-bs-theme="dark"
         style={{backgroundColor: "#221f1f"}}
       >
