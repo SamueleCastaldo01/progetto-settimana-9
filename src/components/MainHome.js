@@ -33,7 +33,7 @@ function MainHome() {
           </div>
         </div>
 
-        <Gallerie title="Trending Now" saga="star wars"/>
+        <Gallerie title="Trending Now" saga="star wars" />
         <Gallerie title="Watch it Again" saga="pokemon"/>
         <Gallerie title="New Releases" saga="harry potter"/>
 

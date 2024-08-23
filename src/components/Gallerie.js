@@ -1,12 +1,12 @@
 import { Component } from "react";
 import GallFilm from "./GallFilm";
+import { CircularProgress } from "@mui/material";
+import { Alert } from "react-bootstrap";
 
 class Gallerie extends Component {
 
     state = {
-        films: [], // so già che recupererò dalle API un array di prenotazioni
-        // per questo motivo inizializzo la proprietà dello stato in cui le salverò
-        // come un ARRAY VUOTO
+        films: [],
         isLoading: true,
         isError: false,
       }
@@ -38,7 +38,6 @@ class Gallerie extends Component {
       }
 
       componentDidMount() {
-        console.log('Componente montato, avvio fetchFilms');
         this.fetchFilms(); // Chiama la funzione di fetch quando il componente viene montato
       }
 
@@ -48,12 +47,21 @@ class Gallerie extends Component {
         return(
             <>
         <h4 className="text-white text-start">{this.props.title}</h4>
-        <div
-          className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4"
-        >
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
+
+        {this.state.isLoading &&
+            <CircularProgress color="inherit"/> 
+        }
+
+        {this.state.isError && (
+                <Alert variant="danger">
+                  Oops! Qualcosa è andato storto 😱
+                </Alert>     
+            )}
+
             {this.state.films.slice(0, 6).map((film, i) => {
                 return (
-                    <GallFilm key={i} src={film.Poster} />
+                    <GallFilm key={i} src={film.Poster}/>
                 );
             })}
 
