@@ -7,7 +7,7 @@ class GallFilm extends Component{
         return(
             <>
           <div className="col mb-2 text-center px-1">
-            <img className="img-fluid" src="assets/1.png" alt="movie picture" />
+            <img className="img-fluid" src={this.props.src} alt="movie picture" />
           </div>
             </>
         )
