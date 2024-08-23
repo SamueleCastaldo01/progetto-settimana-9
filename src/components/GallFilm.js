@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Button from '@mui/material/Button';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 class GallFilm extends Component {
   state = {
@@ -28,8 +30,11 @@ class GallFilm extends Component {
           {isHovered && (
             <div className="film-details p-2 text-start position-absolute" style={{backgroundColor: "black"}}>
               <p className="mb-0 fw-bold">{title}</p>
-              <p className="mb-0 mt-2"><b>Anno:</b> {year}</p>
-              <p className="mb-0 mt-2"><b>Tipo:</b> {type}</p>
+              <div className="text-center">
+                <Button className="w-100 bg-secondary" variant="contained" startIcon={<PlayArrowIcon />}>Riproduci</Button>
+              </div>
+              <p className="m-0 mt-2"><b>Anno:</b> {year}</p>
+              <p className="m-0 mt-2"><b>Tipo:</b> {type}</p>
             </div>
           )}
         </div>
