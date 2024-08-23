@@ -95,7 +95,7 @@ class Search extends Component {
 
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 mt-5">
                         {this.state.films.map((film, i) => (
-                            <GallFilm key={i} src={film.Poster} />
+                            <GallFilm key={i} src={film.Poster} title={film.Title} type={film.Type} year={film.Year}/>
                         ))}
                     </div>
                 </div>
