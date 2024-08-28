@@ -43,7 +43,12 @@ function DetailsFilm() {
         <CircularProgress color="inherit" />
       ) : (
         <>
-          <h2>{detailsFilm.Title}</h2>
+          <div className="row g-5 px-5">
+            <div className="col-3"></div>
+            <div className="col-9 text-start">
+              <h2>{detailsFilm.Title}</h2>
+            </div>
+          </div>
           <div className="row g-5 px-5 mt-2">
             <div className="col-3 text-start">
               <img
