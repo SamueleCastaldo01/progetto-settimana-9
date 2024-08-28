@@ -21,7 +21,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/detailsFilm/:imdbID" element={<DetailsFilm />} />{" "}
+          <Route path="/detailsFilm/:imdbID" element={<DetailsFilm />} />
           {/**Questa non è completata */}
           <Route path="*" element={<Error />} />
         </Routes>
